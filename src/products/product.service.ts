@@ -6,7 +6,7 @@ import { Product } from './product.interface';
 @Injectable()
 export class ProductService {
   findAll() {
-    const filePath = path.join(process.cwd(), 'data', 'product.json');
+    const filePath = path.join(process.cwd(), 'data', 'products.json');
     const fileContent = fs.readFileSync(filePath, 'utf-8');
     const products: Product[] = JSON.parse(fileContent) as Product[];
 
