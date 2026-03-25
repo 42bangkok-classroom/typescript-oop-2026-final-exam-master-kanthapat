@@ -6,6 +6,6 @@ export class ProductController {
   constructor(private readonly ProductService: ProductService) {}
   @Get()
   findAll() {
-    this.ProductService.findAll();
+    return this.ProductService.findAll();
   }
 }
